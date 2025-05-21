@@ -208,3 +208,8 @@ describe('Basic user flow for Website', () => {
 
   expect(cart).toBe('[]');
 });
+  // Final pause so browser doesn't close immediately
+it('Pause for inspection (not a real test)', async () => {
+  console.log('Pausing for 10 seconds...');
+  await page.waitForTimeout(10000); // Keeps browser open for 10 seconds
+});
